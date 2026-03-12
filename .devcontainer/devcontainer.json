@@ -4,7 +4,7 @@
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client && sudo docker-compose up -d postgres",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y postgresql-client && sudo docker-compose start postgres",
 	"customizations": {
 		"vscode": {
 			"extensions": [
