@@ -24,7 +24,7 @@ This will:
 
 **Using psql CLI:**
 ```bash
-psql -h localhost -U postgres -d mattermost
+psql -h localhost -U mmuser -d mattermost
 ```
 
 **Connection String:**
