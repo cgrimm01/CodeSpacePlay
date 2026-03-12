@@ -11,26 +11,25 @@ docker-compose up -d
 
 This will:
 - Start a PostgreSQL container on port 5432
-- Create a database named `dev_db`
-- Initialize the database with sample schema and data
+- Create a database named `mattermost`
 
 ### Connect to the Database
 
 **Connection Details:**
 - Host: `localhost`
 - Port: `5432`
-- Database: `dev_db`
-- User: `postgres`
-- Password: `postgres`
+- Database: `mattermost`
+- User: `mmuser`
+- Password: `mmuser`
 
 **Using psql CLI:**
 ```bash
-psql -h localhost -U postgres -d dev_db
+psql -h localhost -U postgres -d mattermost
 ```
 
 **Connection String:**
 ```
-postgresql://postgres:postgres@localhost:5432/dev_db
+postgresql://mmuser:mmuser@localhost:5432/mattermost
 ```
 
 ### Stop the Database
