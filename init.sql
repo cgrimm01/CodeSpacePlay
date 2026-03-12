@@ -1,8 +1,5 @@
-IF NOT EXISTS (SELECT * FROM pg_user WHERE username = 'mmuser')
-BEGIN
-    CREATE ROLE mmuser LOGIN PASSWORD 'mmuser';
-END;
-
+CREATE ROLE mmuser LOGIN PASSWORD 'mmuser';
+   
 IF NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'mattermost')
 THEN
   CREATE DATABASE mattermost OWNER mmuser;
